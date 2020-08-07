@@ -1,7 +1,26 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-columns: [library-s] 1fr 1fr [library-e schedule-s] 1fr [schedule-e];
+    grid-template-rows: 1fr;
+}
+
+.library {
+    grid-column: library-s/library-e;
+    //background: cornflowerblue;
+}
+
+.schedule {
+    grid-column: schedule-s/schedule-e;
+    //background: crimson;
+}
+
+// base styles
 html {
     font-size: 62.5%; // 1rem is 10px
 }
-
 *,
 *::after,
 *::before {
