@@ -1,19 +1,26 @@
-import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome" 
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import Arrow from "../arrow";
 
 class LibraryCourse extends Component {
     render() {
         return (
             <div className="library-course">
-                <label className="library-course__title">Problem Solving</label>
-                <FontAwesomeIcon icon={ faCheck } className="library-course__icon" />
-                {/* arrow component */}
+                <div className="library-course__title-arrow">
+                    <label className="library-course__title">Problem Solving</label>
+                    <FontAwesomeIcon icon={ faCheck } className="library-course__icon" />
+                </div>
+                <Arrow className="library-course__arrow" />
                 {/* action btn component */}
 
                 <div className="library-course__description">
                     <label>Course Description</label>
-                    <p> Dummy text here </p>
+                    <p> 
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                    </p>
                 </div>
             </div>
         );
