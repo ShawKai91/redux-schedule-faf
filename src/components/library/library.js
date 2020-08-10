@@ -28,6 +28,7 @@ class Library extends Component {
         );
     }
 }
+
 function mapStateToProps(state) {
     return {
         courses: state.courses
