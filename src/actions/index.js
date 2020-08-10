@@ -38,7 +38,7 @@ export function fetchCourses() {
                 description: 'In this course you\'ll take a practical look at how to build a large number of software applications and features. By taking a systems analysis and design approach to development and leveraging UML, you\'ll be able to model systems and prepare to build the projects.',
                 enrolled: false
             },
-            /* {
+            {
                 id: 4,
                 title: 'UML for Developers',
                 description: 'This course teaches the foundational building blocks of utilizing UML in order to model software systems.',
@@ -73,7 +73,7 @@ export function fetchCourses() {
                 title: 'Dissecting Rails 5',
                 description: 'Learn how to build powerful applications using this comprehensive guide to the Ruby on Rails web framework.',
                 enrolled: false
-            }, */
+            },
             {
                 id: 10,
                 title: 'This is an Example of a Large Description',
