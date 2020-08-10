@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
@@ -14,7 +17,7 @@ class LibraryCourse extends Component {
                     <FontAwesomeIcon icon={ faCheck } className="library-course__icon" />
                 </div>
                 <Arrow className="library-course__arrow" />
-                <Action className="library-course__action" />
+                <Action onClick={() => this.props.toggleEnrolled(this.props.id) } className="library-course__action" />
 
                 <div className="library-course__description">
                     <label>Course Description</label>
@@ -27,4 +30,4 @@ class LibraryCourse extends Component {
     }
 }
 
-export default LibraryCourse;
+export default connect(null, actions)(LibraryCourse);

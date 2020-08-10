@@ -7,9 +7,10 @@ import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 class Action extends Component {
     render() {
         return (
-            <div className={ `${this.props.className} action` }>
+            <button onClick={() => this.props.onClick() } className={ `${this.props.className} action` }>
                 <FontAwesomeIcon icon={ faPlusCircle } />
-            </div>
+                {/* fas faTimesCircle */}
+            </button>
         );
     }
 }

@@ -3,12 +3,12 @@ import {
     TOGGLE_ENROLLED
 } from './types';
 
-/* export function toggleEnrolled(id) {
+export function toggleEnrolled(id) {
     return {
         type: TOGGLE_ENROLLED,
         payload: id
     }
-} */
+}
 
 export function fetchCourses() {
     return {
