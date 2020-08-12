@@ -5,7 +5,16 @@
     grid-template-rows: [title-s] 100px [title-e course-s] repeat(auto-fit, 1fr) [courses-e];
     row-gap: 22px;
 
-    /* &__title {
-        grid-row: title-s/title-e;
-    } */
+    padding-top: 100px;
+    padding-left: 100px;
+    margin-right: -50px;
+
+    &__title {
+        color: $color-blue;
+        font-family: $font-alegreya;
+        font-size: 34px;
+        font-weight: bold;
+        border-left: 2px solid $color-blue;
+        padding: 20px 40px;
+    }
 }
