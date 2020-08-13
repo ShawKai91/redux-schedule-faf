@@ -5,12 +5,24 @@ import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 
 
 class Action extends Component {
+
+    handleAction = function() {
+        this.props.onClick()
+
+    }.bind(this);
+
     render() {
         return (
-            <button onClick={() => this.props.onClick() } className={ `${this.props.className} action` }>
-                <FontAwesomeIcon icon={ faPlusCircle } />
-                {/* fas faTimesCircle */}
-            </button>
+            <a
+                id='action'
+                onClick={() => this.handleAction() } 
+                className={ `${this.props.className} action` }>
+            </a>
+
+            // <button onClick={() => this.props.onClick() } className={ `${this.props.className} action` }>
+            //     <FontAwesomeIcon icon={ faPlusCircle } />
+            //     {/* fas faTimesCircle */}
+            // </button>
         );
     }
 }
