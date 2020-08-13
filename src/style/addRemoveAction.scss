@@ -18,6 +18,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        transition: all 0.3s ease;
     }
     &:before {
         width: 0.2em;
@@ -26,5 +28,13 @@
     &:after {
         width: 1em;
         height: 0.2em;
+    }
+}
+.action-remove {
+    &:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &:after {
+        transform: translate(-50%, -50%) rotate(-135deg);
     }
 }
