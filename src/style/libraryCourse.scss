@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 45px 58px;
     grid-template-rows: 32px 1fr;
-    // grid-template-rows: 32px [line-s] 20px [line-e] 1fr;
 
     align-items: center;
     z-index: 50;
@@ -12,11 +11,6 @@
         display: flex;
         grid-column: 1/2;
     }
-    // &__line {
-    //     grid-column: 1/-1;
-    //     grid-row: line-s/line-e;
-    //     padding-top: 19px;
-    // }
     &__arrow {
         grid-column: 2/3;
         grid-row: 1/2;
@@ -32,7 +26,6 @@
     &__description {
         grid-column: 1/-1;
         grid-row: 2/3;
-        // grid-row: 3/4;
         padding-top: 24px;
     }
 }
@@ -46,7 +39,6 @@
 }
 .library-course {
 
-    //padding: 25px;
     padding: 12px 0;
     padding-left: 25px;
 
@@ -62,11 +54,6 @@
         font-size: 18px;
         line-height: 22px;
     }
-    // &__line {
-    //     border-bottom: 1px solid #f2f2f2;
-    //     margin-top: 19px;
-    //     margin-bottom: 24px;
-    // }
     &__icon {
         color: $color-blue;
         padding-left: 16px;
