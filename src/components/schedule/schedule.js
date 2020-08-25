@@ -13,11 +13,11 @@ class Schedule extends Component {
         return data.map((course, index) => {
             if(course.enrolled && this.amountEnrolled != 5) {
                 this.amountEnrolled++;
-                console.log("AE: " + this.amountEnrolled);
-                return <ScheduleCourse {...course} key={index} />
+                return <ScheduleCourse {...course} key={index}/>
             }
         })
     }
+
 
     render() {
         this.amountEnrolled = 0
@@ -25,10 +25,10 @@ class Schedule extends Component {
             <div className="schedule">
                 <h1 className="schedule__title">My Schedule</h1>
                 { this.renderCourses() }
-                <ProgressTracker amountPossible={5} amountEnrolled={this.amountEnrolled} />
-                <Gradient />
+                <ProgressTracker amountPossible={5} amountEnrolled={this.amountEnrolled}/>
+                <Gradient/>
             </div>
-        );
+        )
     }
 }
 

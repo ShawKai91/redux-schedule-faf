@@ -1,7 +1,7 @@
 import { 
     FETCH_COURSES,
     TOGGLE_ENROLLED
-} from './types';
+ } from './types';
 
 export function toggleEnrolled(id) {
     return {
@@ -16,20 +16,20 @@ export function fetchCourses() {
         payload: [
             {
                 id: 0,
-                title: "Up and Running w/ Redis",
-                description: "In this course you'll learn to work w/ the efficent Redis database to manage key / value relationship.",
+                title: "Up and Running with Redis",
+                description: "In this course you'll learn how to work with the efficient Redis database to manage key / value relationships.",
                 enrolled: false
             },
             {
                 id: 1,
                 title: "HTML/CSS Bootcamp",
-                description: "Learn HTML5 & CSS from scratch, starting w/ the basics & finishing by 5 projects from scratch.",
+                description: "Learn HTML5 and CSS3 from scratch, starting with the basics and finishing by building five projects from scratch.",
                 enrolled: false
             },
             {
                 id: 2,
-                title: "UX for Delvelopers",
-                description: "This User Experience (UX) Course examines how to develop a system for approching application development & enhancing the experimce for users.",
+                title: "UX for Developers",
+                description: "This User Experience (UX) course examines how to develop a system for approaching application development and enhancing the experience for users.",
                 enrolled: false
             },
             {
