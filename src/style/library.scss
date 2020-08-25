@@ -1,6 +1,8 @@
 .library {
     grid-column: library-s/library-e;
 
+    grid-row: 1/-1;
+
     display: grid;
     grid-template-rows: [title-s] 100px [title-e course-s] repeat(auto-fit, 1fr) [courses-e];
     row-gap: 22px;
