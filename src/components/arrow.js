@@ -9,6 +9,7 @@ class Arrow extends Component {
             status: false
         }
     }
+
     toggleArrow = function() {
         this.props.callback(this.state.status)
         if(this.state.status) {
@@ -21,10 +22,10 @@ class Arrow extends Component {
     }.bind(this);
 
     render() {
-        this.id = `arrow-${ this.props.id }`
+        this.id = `arrow-${this.props.id}`
         return (
-            <a id={ this.id } onClick={() => this.toggleArrow() } className={ `${this.props.className} arrow` }></a>
-        );
+            <a id={this.id} onClick={() => this.toggleArrow()} className={`${this.props.className} arrow`}></a>
+        )
     }
 }
 

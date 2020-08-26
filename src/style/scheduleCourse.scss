@@ -10,14 +10,16 @@
         grid-column: title-s/title-e;
         grid-row: 1/2;
     }
+
     &__action {
         grid-column: action-s/action-e;
         grid-row: 1/2;
     }
 }
+
 .schedule-course {
-    width: 280px;
     height: 55px;
+    width: 280px;
     background: white;
     box-shadow: 0 2px 14px 0 rgba(0,0,0,0.2);
 
